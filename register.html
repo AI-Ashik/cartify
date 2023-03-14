@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is an ecommerce project for ashik express"
+    />
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome cdn  -->
+
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Commerce Project</title>
+  </head>
+  <body>
+    <!-- navbar starts from here  -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <!-- nav upper starts from here  -->
+      <ul class="nav-upper flex-space-around">
+        <li class="nav_list">
+          <a href="index.html" class="nav_link">Home</a>
+        </li>
+
+        <li class="nav_list">
+          <a href="register.html" class="nav_link">Register</a>
+        </li>
+
+        <li class="nav_list">
+          <a href="login.html" class="nav_link">Login</a>
+        </li>
+
+        <li class="nav_list">
+          <a href="index.html" class="nav_link">Logout</a>
+        </li>
+
+        <li class="nav_list">
+          <a href="contact.html" class="nav_link">Contact</a>
+        </li>
+
+        <li class="nav_list">
+          <a href="profile.html" class="nav_link">
+            <img
+              class="profile-icon"
+              src="profile.jpg"
+              alt="profile icon"
+            />
+          </a>
+        </li>
+      </ul>
+      <!-- nav upper ends here  -->
+
+      <!-- nav lower starts here  -->
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav_list">
+          <a href="./index.html" class="logo nav_brand nav_link">
+            <img
+              src="cartify.png"
+              class="logo nav_brand nav_link"
+              alt=""
+          />
+        </li>
+
+        <li class="nav_list">
+          <a href="./cart.html" class="nav_link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart 2 Products - $1021.46
+          </a>
+        </li>
+      </ul>
+      <!-- nav lower ends here  -->
+    </nav>
+    <!-- navbar starts from here  -->
+
+    <main>
+      <section class="register">
+        <h2 class="section-title text-center">User Registration</h2>
+        <div class="card">
+          <form action="" class="form">
+            <div class="form-control flex-center">
+              <label for="name">Name </label>
+              <input
+                placeholder="Enter Your Full Name"
+                type="text"
+                name="name"
+                id="name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-control flex-center">
+              <label for="email">E-mail </label>
+              <input
+                placeholder="Enter Your email Address"
+                type="email"
+                name="email"
+                id="name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-control flex-center">
+              <label for="name">Password </label>
+              <input
+                placeholder="Enter Your Password"
+                type="password"
+                name="password"
+                id="password"
+                required
+                autocomplete="password"
+              />
+            </div>
+
+            <div class="form-control flex-center">
+              <label for="country">Country </label>
+              <select id="country" name="country">
+                <option value="bangladesh">Bangladesh</option>
+                <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+
+            <div class="form-control flex-center">
+              <label for="about">About Me </label>
+              <textarea
+                placeholder="Write About Yourself"
+                name="about"
+                id="about"
+              ></textarea>
+            </div>
+
+            <div class="form-control flex-center form-btn-field">
+              <button class="btn contact-button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer starts here -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to NewsLetter &nbsp;</label>
+        <input
+          type="email"
+          class="footer_input"
+          placeholder="Your E-Mail Address"
+          name="subscribe"
+          id="subscribe"
+        />
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy; Copyright 2023 Cartify</p>
+      </div>
+    </footer>
+    <!-- footer starts here -->
+    <script src="index.js"></script>
+  </body>
+</html>
